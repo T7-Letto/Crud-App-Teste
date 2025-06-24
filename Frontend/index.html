@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Usuários</h1>
+
+        <div class="form-section">
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="email" id="email" placeholder="Email">
+            <button id="botao-salvar" onclick="adicionarUsuario()">Salvar</button>
+        </div>
+
+        <div class="report-buttons">
+            <button onclick="window.open('http://localhost:3001/api/relatorio/pdf', '_blank')">Baixar Relatório PDF</button>
+            <button onclick="window.open('http://localhost:3001/api/relatorio/excel', '_blank')">Baixar Relatório Excel</button>
+        </div>
+
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-usuarios">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

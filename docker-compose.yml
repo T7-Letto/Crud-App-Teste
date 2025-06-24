@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./Backend
+    ports:
+      - "3001:3001"
+   
+    environment:
+      NODE_ENV: development
+    command: ["node", "app.js"]
+
+  frontend:
+    build: ./Frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend

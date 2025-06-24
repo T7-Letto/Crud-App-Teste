@@ -1,0 +1,20 @@
+{
+  "name": "crud-backend",
+  "version": "1.0.0",
+  "description": "CRUD simples com Node.js e SQLite",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Cleiton Silva Vieira",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pdfkit": "^0.13.0",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  }
+}
